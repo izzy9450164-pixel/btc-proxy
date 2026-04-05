@@ -9,7 +9,7 @@ def ai():
     try:
         prompt = request.json.get("prompt","")
         payload = json.dumps({
-            "model": "claude-sonnet-4-5-20251001",
+            "model": "claude-sonnet-4-5-20250929",
             "max_tokens": 300,
             "messages": [{"role":"user","content":prompt}]
         }).encode()
